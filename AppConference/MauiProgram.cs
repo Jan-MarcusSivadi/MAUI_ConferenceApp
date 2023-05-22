@@ -13,6 +13,8 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+        //TODO: YT at 1:18:15 / 2:20:08
+
+        return builder.Build();
 	}
 }
