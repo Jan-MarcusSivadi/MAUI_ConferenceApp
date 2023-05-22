@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#f16e5a" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -50,9 +50,14 @@
 
 	<ItemGroup>
 	  <None Remove="Platforms\Android\Resources\layout\tabbar.xml" />
+	  <None Remove="Resources\Images\settings.svg" />
 	  <None Remove="Resources\Images\tab_agenda.svg" />
 	  <None Remove="Resources\Images\tab_schedule.svg" />
 	  <None Remove="Resources\Images\tab_sponsors.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
