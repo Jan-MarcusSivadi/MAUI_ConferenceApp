@@ -1,4 +1,8 @@
-﻿namespace AppConference;
+﻿using AppConference.Pages;
+using AppConference.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace AppConference;
 
 public static class MauiProgram
 {
@@ -13,7 +17,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-        //TODO: YT at 1:18:15 / 2:20:08
+		builder.Services.AddTransient<SchedulePage>();
+		builder.Services.AddTransient<ScheduleViewModel>();
+
 
         return builder.Build();
 	}

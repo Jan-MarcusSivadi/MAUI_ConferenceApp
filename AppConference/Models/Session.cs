@@ -23,7 +23,7 @@ public partial class Session : ObservableObject
     };
 
     // Dynamic
-    [ObservableProperty]
-    bool inAgenda;
+    //[ObservableProperty]
+    //bool inAgenda;
 }
 
