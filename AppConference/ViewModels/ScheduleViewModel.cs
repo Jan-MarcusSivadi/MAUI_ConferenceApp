@@ -9,7 +9,7 @@ namespace AppConference.ViewModels;
 public partial class ScheduleViewModel : ObservableObject
 {
     public int Day { get; set; }
-    public ObservableRangeCollection<Grouping<string, Session>> Schedule = new();
+    public ObservableRangeCollection<Grouping<string, Session>> Schedule { get; } = new();
     Random random = new();
     public ScheduleViewModel() { }
 
