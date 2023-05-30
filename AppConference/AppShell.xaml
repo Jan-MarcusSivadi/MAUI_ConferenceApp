@@ -10,12 +10,12 @@
         <Tab Title="Schedule" Icon="tab_schedule.png">
             <ShellContent
                 Title="Day 1"
-                ContentTemplate="{DataTemplate local:SchedulePage}"
+                ContentTemplate="{DataTemplate local:ScheduleDay1Page}"
                 Route="ScheduleDay1" />
             
             <ShellContent
                 Title="Day 2"
-                ContentTemplate="{DataTemplate local:SchedulePage}"
+                ContentTemplate="{DataTemplate local:ScheduleDay2Page}"
                 Route="ScheduleDay2" />
         </Tab>
         <Tab Title="My Agenda" Icon="tab_agenda.png">

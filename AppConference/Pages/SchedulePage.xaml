@@ -15,7 +15,9 @@
             <DataTemplate x:DataType="{x:Null}">
                 <ViewCell>
                     <Grid Padding="10">
-                        <Label Text="{Binding Key}" FontAttributes="Bold"/>
+                        <Label Text="{Binding Key}"
+                               TextColor="{StaticResource Primary}"
+                               FontSize="18" FontAttributes="Bold"/>
                     </Grid>
                 </ViewCell>
             </DataTemplate>
@@ -24,13 +26,16 @@
             <DataTemplate x:DataType="model:Session">
                 <ViewCell>
                     <Grid Padding="10">
-                        <Frame>
+                        <Border Padding="14" 
+                                StrokeShape="RoundRectangle 10"
+                                Stroke="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" 
+                                StrokeThickness="2">
                             <VerticalStackLayout Spacing="10">
                                 <Label Text="{Binding Title}" FontSize="36" FontAttributes="Bold"/>
                                 <Label Text="{Binding Room, StringFormat='in {0}'}"/>
                                 <Label Text="{Binding Speaker.Name}"/>
                             </VerticalStackLayout>
-                        </Frame>
+                        </Border>
                     </Grid>
                 </ViewCell>
             </DataTemplate>
